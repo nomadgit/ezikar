@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @kar.title %>
+</p>
+
+<%= image_tag @kar.image_url,:width => 550%>
+<p></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= simple_format(@kar.description) %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @kar.location.title unless @kar.location.nil? %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @kar.price %>
+</p>
+
+<%= link_to 'Edit', edit_kar_path(@kar) %> |
+<%= link_to 'Back', kars_path %> |
+<%= link_to 'New', new_kar_path %> |
+<%= link_to "Home", root_url %>

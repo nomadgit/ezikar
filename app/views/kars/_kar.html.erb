@@ -1,0 +1,8 @@
+ <div class="home-widget">
+          <center><h6><%= kar.title %></h6></center>
+          <%=link_to (image_tag kar.image_url, :width => 300), kar_path(kar)%>
+         
+          
+          <p><%=truncate(kar.description, :length => 65) { link_to "Read more", kar_path(kar) }%></p>
+        </div>
+       

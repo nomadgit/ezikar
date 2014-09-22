@@ -1,0 +1,2 @@
+module KarsHelper
+end
